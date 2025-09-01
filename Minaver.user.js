@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Minaver
 // @namespace    https://github.com/onetwohour/Minaver
-// @version      1.0
+// @version      1.1
 // @description  네이버의 시작 화면을 간소화합니다.
 // @author       onetwohour
 // @match        *://www.naver.com/
@@ -11,17 +11,19 @@
 // @grant        GM_registerMenuCommand
 // @run-at       document-start
 // @license      BSD 2-Clause
-// @downloadURL https://update.greasyfork.org/scripts/547954/Minaver.user.js
-// @updateURL https://update.greasyfork.org/scripts/547954/Minaver.meta.js
+// @downloadURL  https://update.greasyfork.org/scripts/547954/Minaver.user.js
+// @updateURL    https://update.greasyfork.org/scripts/547954/Minaver.meta.js
 // ==/UserScript==
 
 (function() {
     'use strict';
+    
+    const defaultDuration = 0.7;
 
-    let animationDuration = GM_getValue('animationDuration', 0.7);
+    let animationDuration = GM_getValue('animationDuration', defaultDuration);
 
     GM_registerMenuCommand('애니메이션 속도 설정', () => {
-        const currentSpeed = GM_getValue('animationDuration', 0.7);
+        const currentSpeed = GM_getValue('animationDuration', defaultDuration);
         const newSpeedInput = prompt('애니메이션 속도를 초 단위로 입력하세요 (예: 0.5):', currentSpeed);
 
         if (newSpeedInput === null) {
@@ -75,7 +77,7 @@
         if (!header || !searchWrap) return;
 
         const expandUI = () => {
-            animationDuration = GM_getValue('animationDuration', 0.7);
+            animationDuration = GM_getValue('animationDuration', defaultDuration);
             const initialClientWidth = document.documentElement.clientWidth;
 
             document.body.classList.add('ui-expanded');
