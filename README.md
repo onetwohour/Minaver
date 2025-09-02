@@ -23,7 +23,7 @@
    * [Violentmonkey](https://violentmonkey.github.io/)
 
 2. **Minaver 스크립트 설치**  
-   [**스크립트 설치하기**](https://update.greasyfork.org/scripts/547954/Minaver.user.js)
+   * [**스크립트 설치하기**](https://update.greasyfork.org/scripts/547954/Minaver.user.js)
 
 ---
 
