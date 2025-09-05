@@ -10,7 +10,7 @@
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
 // @run-at       document-start
-// @license      BSD 2-Clause
+// @license      BSD-2-Clause
 // @downloadURL  https://update.greasyfork.org/scripts/547954/Minaver.user.js
 // @updateURL    https://update.greasyfork.org/scripts/547954/Minaver.meta.js
 // ==/UserScript==
