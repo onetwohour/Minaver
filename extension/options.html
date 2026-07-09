@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minaver 설정</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <main class="settings">
+        <header class="settings__header">
+            <h1>Minaver</h1>
+        </header>
+
+        <form id="settings-form" class="settings__form">
+            <label for="animation-duration">애니메이션 속도</label>
+            <div class="duration-control">
+                <input id="animation-duration" name="animationDuration" type="number" min="0" step="0.1" inputmode="decimal" required>
+                <span>초</span>
+            </div>
+
+            <p id="status" class="status" role="status" aria-live="polite"></p>
+
+            <div class="actions">
+                <button id="reset" class="button button--secondary" type="button">기본값</button>
+                <button class="button button--primary" type="submit">저장</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="options.js"></script>
+</body>
+</html>
